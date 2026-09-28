@@ -1,14 +1,16 @@
 # Lesson counter
 Presents the amount of expected ICT lessons for the school year
 
-## Arguments
-- weekday: int
-    0 to 6 monday to sunday
-- print_delay: float
-    seconds to delay the presenting
-
 ## Example usage
 
+Discover the current arguments
+
 ```sh
-  uv run -m lesson_counter 1 0.1
+    uv run -m lesson_counter --help
+```
+
+Run on monday with 0.1 second present delay
+
+```sh
+  uv run -m lesson_counter 0 --print-delay 0.1
 ```
