@@ -1,17 +1,21 @@
-[tool.poetry]
+[project]
 name = "lesson-counter"
 version = "0.1.0"
-description = ""
-authors = ["Ivan Sadílek <sadilekivan@gmail.com>"]
-# readme = "README.md"
-# license = "BSD"
-# packages = [
-#   { include = "src" }
-# ]
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ivan Sadílek", email = "sadilekivan@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.10"
+[project.scripts]
+lesson-counter = "lesson_counter:main"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pyright]
+venvPath = "."
+venv = ".devenv/state/venv"

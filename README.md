@@ -1,8 +1,14 @@
-To get started, run the following:
+# Lesson counter
+Presents the amount of expected ICT lessons for the school year
 
-weekday is 0 - 6, monday to sunday
+## Arguments
+- weekday: int
+    0 to 6 monday to sunday
+- print_delay: float
+    seconds to delay the presenting
 
-```
-nix develop
-poetry run python -m src <weekday> <print_timeout_seconds>
+## Example usage
+
+```sh
+  uv run -m lesson_counter 1 0.1
 ```
